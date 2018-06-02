@@ -1,0 +1,149 @@
+﻿@page
+@model ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_domicilios.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>rh_cat_domicilio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input id="id2" asp-for="rh_cat_domicilio.IdPersona" value="2" />
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Domicilio" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Domicilio" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Domicilio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.EntreCalle1" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.EntreCalle1" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.EntreCalle1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.EntreCalle2" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.EntreCalle2" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.EntreCalle2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.CodigoPostal" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.CodigoPostal" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.CodigoPostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Coordenadas" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Coordenadas" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Coordenadas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="rh_cat_domicilio.Principal" /> @Html.DisplayNameFor(model => model.rh_cat_domicilio.Principal))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Pais" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Pais" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Pais" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Estado" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Estado" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Municipio" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Municipio" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Municipio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Localidad" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Localidad" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Localidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Colonia" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Colonia" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Colonia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.Referencia" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.Referencia" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.Referencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.ClaveReferencia" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.ClaveReferencia" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.ClaveReferencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.TipoDomicilio" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.TipoDomicilio" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.TipoDomicilio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.FechaReg" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.FechaReg" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.FechaReg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.FechaUltMod" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.FechaUltMod" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.FechaUltMod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.UsuarioReg" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.UsuarioReg" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.UsuarioReg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="rh_cat_domicilio.UsuarioMod" class="control-label"></label>
+                <input asp-for="rh_cat_domicilio.UsuarioMod" class="form-control" />
+                <span asp-validation-for="rh_cat_domicilio.UsuarioMod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="rh_cat_domicilio.Activo" /> @Html.DisplayNameFor(model => model.rh_cat_domicilio.Activo))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="rh_cat_domicilio.Borrado" /> @Html.DisplayNameFor(model => model.rh_cat_domicilio.Borrado))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        var parametro = getParameterByName('id');
+        $('#id2').val(parametro);
+    </script>
+}

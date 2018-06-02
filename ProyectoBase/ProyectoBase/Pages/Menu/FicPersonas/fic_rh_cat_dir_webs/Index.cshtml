@@ -1,0 +1,96 @@
+﻿@page
+@model ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_dir_webs.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].DesDirWeb)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].DirWeb)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].Principal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].ClaveReferencia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].Referencia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].FechaReg)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].FechaUltMod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].UsuarioReg)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].UsuarioMod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].Activo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_dir_web[0].Borrado)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.rh_cat_dir_web) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesDirWeb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirWeb)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Principal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaveReferencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Referencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaUltMod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioMod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Borrado)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.IdDirWeb">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.IdDirWeb">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.IdDirWeb">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

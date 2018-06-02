@@ -1,0 +1,85 @@
+﻿@page
+@model ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_dir_webs.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>rh_cat_dir_web</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.DesDirWeb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.DesDirWeb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.DirWeb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.DirWeb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.Principal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.Principal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.ClaveReferencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.ClaveReferencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.Referencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.Referencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.FechaReg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.FechaReg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.FechaUltMod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.FechaUltMod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.UsuarioReg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.UsuarioReg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.UsuarioMod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.UsuarioMod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.Activo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.Activo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_dir_web.Borrado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_dir_web.Borrado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.rh_cat_dir_web.IdDirWeb">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

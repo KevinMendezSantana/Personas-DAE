@@ -1,0 +1,138 @@
+﻿@page
+@model ProyectoBase.Pages.FicPersonas.fic_rh_cat_personas.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].IdInstituto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].NumControl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].ApPaterno)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].ApMaterno)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].RFC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].CURP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].FechaNac)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].TipoPersona)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].Sexo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].RutaFoto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].Alias)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].FechaReg)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].FechaUltMod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].UsuarioReg)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].UsuarioMod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].Activo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.rh_cat_persona[0].Borrado)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.rh_cat_persona) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdInstituto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumControl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApPaterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApMaterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RFC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CURP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPersona)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RutaFoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaUltMod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioMod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Borrado)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.IdPersona">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.IdPersona">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.IdPersona">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

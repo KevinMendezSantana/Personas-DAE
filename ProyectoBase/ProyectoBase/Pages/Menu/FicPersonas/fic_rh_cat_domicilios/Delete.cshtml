@@ -1,0 +1,142 @@
+﻿@page
+@model ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_domicilios.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>rh_cat_domicilio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Domicilio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Domicilio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.EntreCalle1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.EntreCalle1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.EntreCalle2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.EntreCalle2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.CodigoPostal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.CodigoPostal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Coordenadas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Coordenadas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Principal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Principal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Pais)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Pais)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Estado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Estado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Municipio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Municipio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Localidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Localidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Colonia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Colonia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Referencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Referencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.ClaveReferencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.ClaveReferencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.TipoDomicilio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.TipoDomicilio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.FechaReg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.FechaReg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.FechaUltMod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.FechaUltMod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.UsuarioReg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.UsuarioReg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.UsuarioMod)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.UsuarioMod)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Activo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Activo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rh_cat_domicilio.Borrado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rh_cat_domicilio.Borrado)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="rh_cat_domicilio.IdDomicilio" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
