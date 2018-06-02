@@ -21,5 +21,6 @@ namespace ProyectoBase.Models.FicPersonas
         public string UsuarioMod { get; set; }
         public bool Activo { get; set; }
         public bool Borrado { get; set; }
+        public int IdPersona { get; set; }
     }
 }

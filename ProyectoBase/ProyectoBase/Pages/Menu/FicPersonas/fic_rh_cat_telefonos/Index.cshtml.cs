@@ -18,11 +18,36 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_telefonos
             _context = context;
         }
 
-        public IList<rh_cat_telefono> rh_cat_telefono { get;set; }
+        public IList<rh_cat_telefono> rh_cat_telefono { get; set; }
 
-        public async Task OnGetAsync()
+        [BindProperty]
+        public rh_cat_persona rh_cat_persona { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
-            rh_cat_telefono = await _context.rh_cat_telefonos.ToListAsync();
+            //Esto es para mostrar solo los domicilios de un usuario gracias a su id
+            var item = from m in _context.rh_cat_telefonos
+                       select m;
+
+            item = item.Where(s => s.IdPersona.Equals(id));
+
+
+            rh_cat_telefono = await item.ToListAsync();
+
+            //Esto es asignarle los valores a la variable rh_cat_personas y poderlo usar en el index para pasar
+            //el parametro de id a la siguiente ventana
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            rh_cat_persona = await _context.rh_cat_personas.SingleOrDefaultAsync(m => m.IdPersona == id);
+
+            if (rh_cat_persona == null)
+            {
+                return NotFound();
+            }
+            return Page();
         }
     }
 }

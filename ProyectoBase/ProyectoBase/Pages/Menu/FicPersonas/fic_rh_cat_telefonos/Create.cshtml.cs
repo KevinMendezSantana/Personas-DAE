@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using ProyectoBase.Models.FicPersonas;
 
 namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_telefonos
@@ -18,8 +19,22 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_telefonos
             _context = context;
         }
 
-        public IActionResult OnGet()
+        [BindProperty]
+        public rh_cat_persona rh_cat_persona { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            rh_cat_persona = await _context.rh_cat_personas.SingleOrDefaultAsync(m => m.IdPersona == id);
+
+            if (rh_cat_persona == null)
+            {
+                return NotFound();
+            }
             return Page();
         }
 
@@ -36,7 +51,7 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_telefonos
             _context.rh_cat_telefonos.Add(rh_cat_telefono);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("../fic_rh_cat_personas/Index");
         }
     }
 }
