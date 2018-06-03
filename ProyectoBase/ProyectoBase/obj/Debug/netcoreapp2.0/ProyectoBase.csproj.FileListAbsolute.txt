@@ -53,3 +53,14 @@ C:\Users\kevin\Desktop\mendez\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\
 C:\Users\kevin\Desktop\mendez\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.AssemblyInfo.cs
 C:\Users\kevin\Desktop\mendez\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.dll
 C:\Users\kevin\Desktop\mendez\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.pdb
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\bin\Debug\netcoreapp2.0\ProyectoBase.deps.json
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\bin\Debug\netcoreapp2.0\ProyectoBase.runtimeconfig.json
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\bin\Debug\netcoreapp2.0\ProyectoBase.runtimeconfig.dev.json
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\bin\Debug\netcoreapp2.0\ProyectoBase.dll
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\bin\Debug\netcoreapp2.0\ProyectoBase.pdb
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.csprojResolveAssemblyReference.cache
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.csproj.CoreCompileInputs.cache
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.AssemblyInfoInputs.cache
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.AssemblyInfo.cs
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.dll
+C:\Users\Julio Cesar\Desktop\Personas-DAE-2018\Personas-DAE\ProyectoBase\ProyectoBase\obj\Debug\netcoreapp2.0\ProyectoBase.pdb
