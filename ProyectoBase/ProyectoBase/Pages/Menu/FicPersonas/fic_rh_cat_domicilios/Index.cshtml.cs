@@ -16,12 +16,15 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_domicilios
         public IndexModel(ProyectoBase.Models.FicPersonas.ApplicationDbContext context)
         {
             _context = context;
+
         }
 
         public IList<rh_cat_domicilio> rh_cat_domicilio { get;set; }
 
         [BindProperty]
         public rh_cat_persona rh_cat_persona { get; set; }
+
+
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,8 +33,7 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_domicilios
                        select m;
 
             item = item.Where(s => s.IdPersona.Equals(id));
-
-
+            
             rh_cat_domicilio = await item.ToListAsync();
 
             //Esto es asignarle los valores a la variable rh_cat_personas y poderlo usar en el index para pasar
@@ -52,4 +54,8 @@ namespace ProyectoBase.Pages.Menu.FicPersonas.fic_rh_cat_domicilios
         
 
     }
+
+
+
 }
+
